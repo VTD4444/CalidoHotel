@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <title>Thanh toán</title>
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<script>
+    $(function () {
+        $("#navbar").load("./navbar.html");
+    });
+</script>
+
+<body>
+    <div id="navbar"></div>
+
+    <div class="pay-banner">
+        <div class="ht_bgt2">THANH TOÁN</div>
+        <div class="container"></div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row d-flex justify-content-between">
+            <div class="col-12 my-5 contact-form">
+                <h2>Phương thức thanh toán</h2>
+                <form class="border-bottom">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="vietqr">
+                        <label class="form-check-label" for="vietqr">VietQR</label>
+                        <img style="width: 70px" src="./assets/img/vietqr.png" alt="VietQR">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="bank">
+                        <label class="form-check-label" for="bank">Chuyển tiền ngân hàng</label>
+                        <img src="./assets/img/vietcombank.png" style="width: 70px" alt="">
+                        <img src="./assets/img/viettinbank.png" style="width: 70px" alt="">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="wallet">
+                        <label class="form-check-label" for="wallet">Ví điện tử</label>
+                        <img src="./assets/img/wallet.png" style="width: 130px;" alt="">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="atm">
+                        <label class="form-check-label" for="atm">ATM Cards/Mobile Banking</label>
+                        <img src="./assets/img/atm.png" style="width: 70px;" alt="">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment">
+                        <label class="form-check-label" for="card">Thẻ thanh toán</label>
+                        <img src="./assets/img/card.png" style="width: 100px;" alt="">
+                    </div>
+                </form>
+                <div class="d-flex justify-content-between mt-3">
+                    <h2>Tổng giá</h2>
+                    <h2>793.650 VND</h2>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="d-flex justify-content-center">
+            <a href="#" class="button">Thanh toán và nhận mã QR</a>
+        </div><br>
+        <div class="d-flex justify-content-center">
+            <small>Bằng cách tiếp tục thanh toán, bạn đã đồng ý <span class="note">Điều khoản & Điều kiện</span> và <span class="note">Chính sách quyền riêng tư</span> </small>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/CalidoHotelHanoi"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <strong>LIÊN HỆ</strong>
+                    </div>
+                    <br>
+                    <div>
+                        <strong>Tel:</strong> 0858988883
+                    </div>
+                    <div>
+                        <strong>Email:</strong> hanoicalidohotel@gmail.com
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <strong>ĐỊA CHỈ</strong>
+                    </div>
+                    <br>
+                    <div>
+                        16 Phố Nguyễn Quang Bích, Quận Hoàn Kiếm, Hà Nội, Việt Nam
+                    </div>
+                </div>
+                <div class="col-3"> <img src="./assets/img/logo.png"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

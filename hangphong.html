@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <title>Hạng phòng</title>
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./script/script.js"></script>
+</head>
+
+<script>
+    $(function () {
+        $("#navbar").load("./navbar.html");
+    });
+</script>
+
+<body>
+    <div id="navbar"></div>
+    <div class="hp_bg">
+        <div class="hp_bgt2">HẠNG PHÒNG</div>
+        <div class="container">
+        </div>
+    </div><br>
+    <div class="container">
+        <div class="row hp">
+            <div class="col-6 box">
+                <img src="./assets/img/superior.jpg" class="hp_anhphong">
+                <div class="tenphong">SUPERIOR</div>
+                <div class="mota">
+                    Phòng gồm có 1 giường đôi hoặc 2 giường đơn có điều hòa, phòng
+                    tắm riêng với vòi sen và máy sấy tóc. Có tủ quần áo, két an toàn, máy sấy quần áo, sàn trải thảm, TV
+                    màn hình phẳng. Phòng không cửa sổ. Phù hợp 2 người. Diện tích: 20m<sup>2</sup>
+                    <br>
+                </div>
+                <div class="flex">
+                    <a href="./confirm-info.html" class="buttondat">Đặt phòng</a>
+                    <a href="#" class="buttonxem" onclick="showPanel()">Xem chi tiết</a>
+                </div>
+
+            </div>
+            <div class="col-6 box">
+                <img src="./assets/img/deluxe.jpeg" class="hp_anhphong">
+                <div class="tenphong">DELUXE</div>
+                <div class="mota">
+                    Phòng gồm có 1 giường đôi hoặc 2 giường đơn có điều hòa, phòng
+                    tắm riêng với vòi sen và máy sấy tóc. Có tủ quần áo, két an toàn, máy sấy quần áo, sàn trải thảm, TV
+                    màn hình phẳng. Phòng có cửa sổ nhìn ra thành phố. Phù hợp 2 người. Diện tích: 22m<sup>2</sup>
+                </div>
+                <div class="flex">
+                    <a href="./confirm-info.html" class="buttondat">Đặt phòng</a>
+                    <a href="#" class="buttonxem" onclick="showPanel()">Xem chi tiết</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row hp">
+            <div class="col-6 box">
+                <img src="./assets/img/JuniorSuite.jpg" class="hp_anhphong">
+                <div class="tenphong">Junior Suite</div>
+                <div class="mota">
+                    Phòng gồm có 1 giường đôi hoặc 2 giường đơn có điều hòa, phòng
+                    tắm riêng với vòi sen và máy sấy tóc. Có tủ quần áo, két an toàn, máy sấy quần áo, sàn trải thảm, TV
+                    màn hình phẳng. Phòng có ban công đẹp, hướng ra thành phố. Phù hợp 2 người. Diện tích:
+                    27m<sup>2</sup>
+                    <br>
+                    <br>
+                </div>
+                <div class="flex">
+                    <a href="./confirm-info.html" class="buttondat">Đặt phòng</a>
+                    <a href="#" class="buttonxem" onclick="showPanel()">Xem chi tiết</a>
+                </div>
+
+            </div>
+            <div class="col-6 box">
+                <img src="./assets/img/suitefamily.webp" class="hp_anhphong">
+                <div class="tenphong">SUITE FAMILY</div>
+                <div class="mota">
+                    Phòng gồm có 1 giường đôi và 1 giường đơn có điều hòa, phòng
+                    tắm riêng với vòi sen và máy sấy tóc. Có tủ quần áo, két an toàn, máy sấy quần áo, sàn trải thảm, TV
+                    màn hình phẳng. Phòng không cửa sổ. Phù hợp 3 người. Diện tích: 27m<sup>2</sup>
+                    <br>
+                    <br>
+                </div>
+                <div class="flex">
+                    <a href="./confirm-info.html" class="buttondat">Đặt phòng</a>
+                    <a href="#" class="buttonxem" onclick="showPanel()">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div id="overlay" class="overlay hidden">
+        <div id="detail-panel">
+            <div class="detail-header">
+                <h2>Chi tiết phòng</h2>
+                <button class="btn" onclick="closePanel()">X</button>
+            </div>
+            <div class="row m-4">
+                <img class="col-8" src="./assets/img/superior-detail.jpg" alt="Superior">
+                <div class="col-3 details">
+                    <img src="./assets/img/details/image 19.png" alt="Superior">
+                    <img style="width: 75%;" src="./assets/img/details/image 20.png" alt="Superior">
+                    <img src="./assets/img/details/image 21.png" alt="Superior">
+                    <img style="width: 30%;" src="./assets/img/details/image 22.png" alt="Superior">
+                    <img src="./assets/img/details/image 23.png" alt="Superior">
+                    <img style="width: 50%;" src="./assets/img/details/image 24.png" alt="Superior">
+                    <img src="./assets/img/details/image 25.png" alt="Superior">
+                    <img src="./assets/img/details/image 26.png" alt="Superior">
+                    <img style="width: 40%;" src="./assets/img/details/image 27.png" alt="Superior">
+                    <img src="./assets/img/details/image 28.png" alt="Superior">
+                    <img style="width: 75%;" src="./assets/img/details/image 29.png" alt="Superior">
+                    <img src="./assets/img/details/image 30.png" alt="Superior">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+
+                </div>
+                <div class="col-3">
+                    <div>
+                        <strong>LIÊN HỆ</strong>
+                    </div>
+                    <br>
+                    <div>
+                        <strong>Tel:</strong> 0858988883
+                    </div>
+                    <div>
+                        <strong>Email:</strong> hanoicalidohotel@gmail.com
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <strong>ĐỊA CHỈ</strong>
+                    </div>
+                    <br>
+                    <div>
+                        16 Phố Nguyễn Quang Bích, Quận Hoàn Kiếm, Hà Nội, Việt Nam
+                    </div>
+                </div>
+                <div class="col-3 anh"> <img src="./assets/img/logo.png"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
