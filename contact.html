@@ -25,7 +25,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <script>
     $(function () {
         $("#navbar").load("./navbar.html");
@@ -34,7 +33,7 @@
 
 <body>
     <div id="navbar"></div>
-    
+
     <div class="contact-banner">
         <div class="ht_bgt2">LIÊN HỆ</div>
         <div class="container"></div>
@@ -115,5 +114,21 @@
             </div>
         </div>
     </div>
+    <button id="scrollToTopBtn" class="scrollToTopBtn" onclick="scrollToTop()">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+    <script src="./script/script.js"></script>
+     <!-- <script>
+        window.onscroll = function() {
+            alert("scrolling");
+            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+     </script> -->
 </body>
+
 </html>

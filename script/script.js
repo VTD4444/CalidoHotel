@@ -35,3 +35,17 @@ function handleOutsideClick(event) {
       closePanel();
   }
 }
+
+window.onscroll = function() {
+  // alert("scrolling");
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
