@@ -1,5 +1,5 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+// var slideIndex = 1;
+// showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -8,7 +8,6 @@ function plusSlides(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("slide");   
- // Lấy các phần tử slide
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -37,8 +36,8 @@ function handleOutsideClick(event) {
 }
 
 window.onscroll = function() {
-  // alert("scrolling");
   var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  console.log("Scrolling, button:", scrollToTopBtn);
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     scrollToTopBtn.style.display = "block";
   } else {

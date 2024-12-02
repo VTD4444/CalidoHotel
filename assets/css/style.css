@@ -217,6 +217,11 @@ body::-webkit-scrollbar-track {
   display: flex;
 }
 
+.nav-btn.active {
+  background-color: #C8B276;
+  color: white; 
+}
+
 .slide img {
   width: 33.33%;
   height: 300px;
