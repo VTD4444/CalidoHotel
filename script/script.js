@@ -19,13 +19,11 @@ function showSlides(n) {
 function showPanel() {
   event.preventDefault();
   document.getElementById('overlay').classList.remove('hidden');
-  // document.addEventListener('click', handleOutsideClick);
 }
 
 function closePanel() {
   event.preventDefault();
   document.getElementById('overlay').classList.add('hidden');
-  // document.removeEventListener('click', handleOutsideClick);
 }
 
 function handleOutsideClick(event) {
@@ -47,4 +45,20 @@ window.onscroll = function() {
 
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function changeMainImage(newSrc) {
+  const mainImage = document.getElementById('mainImage');
+  mainImage.style.opacity = '0';
+  
+  setTimeout(() => {
+      mainImage.src = newSrc;
+      mainImage.style.opacity = '1';
+  }, 300);
+}
+
+function slideImages(direction) {
+  const container = document.querySelector('.detail-panel-slide');
+  const scrollAmount = 130; // Điều chỉnh khoảng cách scroll
+  container.scrollLeft += direction * scrollAmount;
 }
