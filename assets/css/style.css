@@ -26,9 +26,8 @@ body::-webkit-scrollbar-track {
 }
 
 .ht_bg {
-  height: 1000px;
-  background-image: url("../img/trangchubg.jpg");
-  background-size: cover;
+  height: 70vh;
+  background: url("../img/trangchubg.jpg") no-repeat center center/cover;
   color: white;
   text-align: center;
 }
@@ -39,7 +38,7 @@ body::-webkit-scrollbar-track {
 }
 
 .ht_bg .ht_bgt1 {
-  padding-top: 700px;
+  padding-top: 40vh;
   font-size: 30px;
 }
 
@@ -87,7 +86,7 @@ body::-webkit-scrollbar-track {
 }
 
 .footer {
-  height: 200px;
+  height: auto;
   background-color: rgba(12, 94, 146, 1);
   color: white;
   font-size: 14px;
@@ -111,12 +110,12 @@ body::-webkit-scrollbar-track {
   width: auto;
 }
 
-.footer .container .row .col-3 i {
+.footer .container .row .col-md-3 i {
   scale: 200%;
   margin: 20px;
 }
 
-.footer .container .row .col-3 {
+.footer .container .row>div {
   align-content: center;
 }
 
@@ -138,7 +137,7 @@ body::-webkit-scrollbar-track {
 }
 
 .hotel {
-  height: 600px;
+  height: auto;
   background-color: #f1f4f6;
 }
 
@@ -147,12 +146,12 @@ body::-webkit-scrollbar-track {
 
 }
 
-.hotel .container .row .col-6 img {
+.hotel .container .row .col-md-6 img {
   width: 100%;
   height: auto;
 }
 
-.hotel .container .row .col-6 .text_ht2 {
+.hotel .container .row .col-md-6 .text_ht2 {
   text-align: center;
   font-weight: 600;
   margin-bottom: 20px;
@@ -195,6 +194,40 @@ body::-webkit-scrollbar-track {
   transform: translateY(-3px);
 }
 
+.position-relative {
+  position: relative;
+}
+
+.room-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.room-nav:hover {
+  background: rgba(200, 178, 118, 0.8);
+}
+
+.prev-room {
+  left: 0;
+}
+
+.next-room {
+  right: 0;
+}
+
+#home-juniorsuite-img {
+  transition: all 0.3s ease;
+}
+
 .gallery {
   background-color: #f1f4f6;
   width: 100vw;
@@ -208,25 +241,9 @@ body::-webkit-scrollbar-track {
   padding-bottom: 50px;
 }
 
-.slide {
-  display: none;
-  width: 100%;
-}
-
-.slide.active {
-  display: flex;
-}
-
 .nav-btn.active {
   background-color: #C8B276;
   color: white; 
-}
-
-.slide img {
-  width: 33.33%;
-  height: 300px;
-  object-fit: cover;
-  padding: 10px;
 }
 
 .slideshow-container a {
@@ -235,10 +252,75 @@ body::-webkit-scrollbar-track {
   color: #000;
 }
 
-.prev,
-.next {
-  scale: 200%;
-  padding: 15px;
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontal-scroll img {
+  width: 300px;
+  height: auto;
+  margin: 10px 30px 10px 0;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.horizontal-scroll img:hover {
+  transform: scale(1.1);
+}
+
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  align-items: center;
+  justify-content: center;
+}
+
+.image-modal .slide-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+  scale: 150%;
+  color: white;
+  background-color: #c8b27689;
+  border-radius: 100px
+}
+
+.image-modal .slide-btn:hover {
+  transform: scale(1.2);
+}
+
+.image-modal .slide-btn:active {
+  transform: scale(0.9);
+}
+
+.image-modal .next-btn {
+  right: 10vw;
+}
+
+.image-modal .prev-btn {
+  left: 10vw;
+}
+
+.image-modal .modal-content {
+  max-height: 80vh;
+  width: auto;
+  max-width: 80vw;
 }
 
 .ggmap {
@@ -256,7 +338,7 @@ body::-webkit-scrollbar-track {
   height: 600px;
 }
 
-.hangphong .container .row .col-4 .box {
+.hangphong .container .row .col-md-4 .box {
   height: 500px;
   width: auto;
   box-shadow:
@@ -296,26 +378,24 @@ body::-webkit-scrollbar-track {
   margin-bottom: 20 px;
 }
 
-.col-4 {
+.col-md-4 {
   margin-top: 20px;
 }
 
 #home-juniorsuite-img {
   width: 100%;
-  height: 600px;
   padding: 30px;
 }
 
 .hp_bg {
-  height: 1000px;
-  background-image: url("../img/hangphong2.jpg");
-  background-size: cover;
+  height: 70vh;
+  background: url("../img/hangphong2.jpg") no-repeat center center/cover;
   color: white;
   text-align: center;
 }
 
 .hp_bg .hp_bgt2 {
-  padding-top: 700px;
+  padding-top: 50vh;
   font-size: 60px;
 }
 
@@ -388,9 +468,8 @@ body::-webkit-scrollbar-track {
 
 
 }
-.container .row.hp .col-6.box {
+.box {
   height: 100%;
-  width: 45%;
   box-shadow:
       5px 5px 5px #cccccc,
       -5px 5px 5px #cccccc,
@@ -413,7 +492,7 @@ body::-webkit-scrollbar-track {
   text-align: center;
   margin-bottom: 10px;
 }
-.footer .container .row .col-3
+.footer .container .row .col-md-3
 {
     margin: auto;
 }
@@ -435,7 +514,7 @@ p, strong, input, textarea, div {
   }
   .contact-banner {
     background: url(../img/room1.png) no-repeat center center/cover;
-    height: 1000px;
+    height: 70vh;
     color: white;
     text-align: center;
   }
@@ -444,7 +523,7 @@ p, strong, input, textarea, div {
     width: 25%;
   }
   .contact-banner .ht_bgt2 {
-    padding-top: 700px;
+    padding-top: 50vh;
     font-size: 60px;
   }
   .hotel-info, .contact-form {
@@ -457,7 +536,7 @@ p, strong, input, textarea, div {
   }
   .service-banner {
     background: url(../img/service-banner.jpg);
-    height: 1000px;
+    height: 70vh;
     background-size: cover;
     color: white;
     text-align: center;
@@ -467,12 +546,12 @@ p, strong, input, textarea, div {
     width: 25%;
   }
   .service-banner .ht_bgt2 {
-    padding-top: 700px;
+    padding-top: 50vh;
     font-size: 60px;
   }
   .pay-banner {
     background: url(../img/service-banner.jpg);
-    height: 1000px;
+    height: 70vh;
     background-size: cover;
     color: white;
     text-align: center;
@@ -482,7 +561,7 @@ p, strong, input, textarea, div {
     width: 25%;
   }
   .pay-banner .ht_bgt2 {
-    padding-top: 700px;
+    padding-top: 50vh;
     font-size: 60px;
   }
 .form-check {
@@ -522,10 +601,12 @@ form img {
 
 #detail-panel {
   background-color: #1E2C32;
-  width: 80%;
-  height: 95%;
+  width: 80vw;
+  height: 95vh;
+  max-height: 70vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  
 }
 
 #detail-panel .row {
@@ -547,32 +628,20 @@ form img {
   scale: 150%;
 }
 
-#detail-panel .col-8>img{
-  width: 100%;
-  height: 400px;
-}
-
 .detail-panel-slide{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.detail-panel-slide img{
-  padding: 0;
-  /* max-width: ; */
-}
-
 .detail-panel-slide-container {
-  position: relative;
   width: 100%;
+  height: 20%;
   margin: 10px 0;
-  display: flex;
   align-items: center;
 }
 
 .detail-panel-slide {
-  display: flex;
   overflow-x: hidden;
   overflow-y: hidden;
   scroll-behavior: smooth;
@@ -580,9 +649,9 @@ form img {
 }
 
 .slide-img {
-  min-width: 120px;
-  height: 80px;
-  margin: 0 5px;
+  width: 150px;
+  max-height: 5vw;
+  margin: 0 10px;
   cursor: pointer;
   object-fit:contain;
   transition: transform 0.3s;
@@ -596,16 +665,16 @@ form img {
   position: absolute;
   height: 40px;
   width: 40px;
-  background: #C8B276;
+  background: rgba(0, 0, 0, 0);
   border: none;
   border-radius: 50%;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: transform 0.2s;
 }
 
 .slide-btn:hover {
-  background: #A68A50;
+  transform: scale(1.5);
 }
 
 .prev-btn {
@@ -618,14 +687,15 @@ form img {
 
 #mainImage {
   width: 100%;
-  height: 400px;
+  max-height: 30vw;
   object-fit: cover;
   transition: opacity 0.3s;
 }
 
 .details {
   background-color: #fff;
-  height: 500px;
+  height: 75vh;
+  max-height: 50vw;
   overflow-y: scroll;
 }
 
@@ -633,9 +703,6 @@ form img {
   width: 100%;
 }
 
-.hidden {
-  display: none;
-}
 .scrollToTopBtn {
   position: fixed;
   bottom: 20px;

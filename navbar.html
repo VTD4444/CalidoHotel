@@ -14,13 +14,14 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
 </head>
 <body>
-    <div class="task1">
-        <a href="./index.html"><img src="./assets/img/logo.png"></a>
+    <div class="task1 d-flex justify-content-between px-3">
+        <div class="d-flex align-items-center"><i class="fa-solid fa-bars menu d-block d-md-none" style="color: #656565;" onclick="TurnOnMenuPanel()"></i></div>
+        <a class="mx-auto" href="./index.html"><img src="./assets/img/logo.png"></a>
     </div>
-    <div class="nav">
+    <div class="nav d-none d-md-flex">
         <div class="container">
             <div class="row h-100">
                 <div class="col-3 h-100"><a class="d-flex align-items-center justify-content-center w-100 h-100 nav-btn"
@@ -34,6 +35,15 @@
             </div>
         </div>
     </div>
+    <div class="mobile-menu-overlay" onclick="TurnOnMenuPanel()"></div>
+    <div class="mobile-menu d-block d-md-none">
+        <div class="mobile-menu-items">
+            <a href="index.html">Trang chủ</a>
+            <a href="hangphong.html">Hạng phòng</a>
+            <a href="service.html">Dịch vụ</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+    </div>
     <script>
         const navLinks = document.querySelectorAll('.nav-btn');
         const currentPage = window.location.pathname.split('/').pop();
@@ -44,6 +54,20 @@
                 link.classList.remove('active');
             }
         });
+        function TurnOnMenuPanel() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const overlay = document.querySelector('.mobile-menu-overlay');
+            
+            if (mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                overlay.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            } else {
+                mobileMenu.classList.add('active');
+                overlay.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+        }
     </script>
 </body>
 </html>
