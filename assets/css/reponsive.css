@@ -1,6 +1,9 @@
 @media screen and (max-width: 768px) {
     .task1 {
         height: 60px;
+        position: fixed;
+        top: 0;
+        z-index: 100;
     }
     .task1 img {
         height: 40px;
