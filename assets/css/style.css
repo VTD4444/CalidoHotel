@@ -202,9 +202,9 @@ body::-webkit-scrollbar-track {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0);
+  background: rgba(200, 178, 118, 0.7);
   border: none;
-  color: black;
+  color: white;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -213,7 +213,11 @@ body::-webkit-scrollbar-track {
 }
 
 .room-nav:hover {
-  background: rgba(200, 178, 118, 0.8);
+  background: rgba(200, 178, 118, 0.9);
+}
+
+.room-nav:active {
+  transform: scale(0.9);
 }
 
 .prev-room {
@@ -535,9 +539,8 @@ p, strong, input, textarea, div {
     height: 400px;
   }
   .service-banner {
-    background: url(../img/service-banner.jpg);
+    background: url(../img/service-banner.jpg) no-repeat center center/cover;
     height: 70vh;
-    background-size: cover;
     color: white;
     text-align: center;
   }
@@ -550,9 +553,8 @@ p, strong, input, textarea, div {
     font-size: 60px;
   }
   .pay-banner {
-    background: url(../img/service-banner.jpg);
+    background: url(../img/service-banner.jpg) no-repeat center center/cover;
     height: 70vh;
-    background-size: cover;
     color: white;
     text-align: center;
   }
