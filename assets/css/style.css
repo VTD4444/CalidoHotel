@@ -229,7 +229,8 @@ body::-webkit-scrollbar-track {
 }
 
 #home-juniorsuite-img {
-  transition: all 0.3s ease;
+  width: 100%;
+  padding: 0 30px 40px;
 }
 
 .gallery {
@@ -384,11 +385,6 @@ body::-webkit-scrollbar-track {
 
 .col-md-4 {
   margin-top: 20px;
-}
-
-#home-juniorsuite-img {
-  width: 100%;
-  padding: 30px;
 }
 
 .hp_bg {
