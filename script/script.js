@@ -1,3 +1,20 @@
+// document.addEventListener('DOMContentLoaded', function() {
+//   TurnOnMenuPanel();
+// });
+function TurnOnMenuPanel() {
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const overlay = document.querySelector('.mobile-menu-overlay');
+  
+  if (mobileMenu.classList.contains('active')) {
+      mobileMenu.classList.remove('active');
+      overlay.style.display = 'none';
+      document.body.style.overflow = 'auto';
+  } else {
+      mobileMenu.classList.add('active');
+      overlay.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+  }
+}
 function showPanel() {
   event.preventDefault();
   const overlay = document.getElementById('overlay');
@@ -96,3 +113,4 @@ document.getElementById('imageModal').addEventListener('click', function(event) 
       closeImageModal();
   }
 });
+

@@ -15,8 +15,8 @@
         padding-top: 5vh;
         font-size: 15px;
     }
-    .ht_bgt2 {
-        font-size: 30px;
+    .banner-title {
+        font-size: 50px;
     }
     .hangphong .container .row, .hotel .container .row {
         flex-direction: column-reverse;
@@ -67,7 +67,7 @@
     #detail-panel {
         width: 90vw;
         max-height: none;
-        height: 80vh;
+        height: 90vh;
     }
 
     #mainImage {
@@ -80,11 +80,11 @@
     }
 
     .details {
-        max-height: 30vh;
+        max-height: 32vh;
     }
 
     .details img{
-        width: 80%;
+        width: 90%;
     }
 }
 

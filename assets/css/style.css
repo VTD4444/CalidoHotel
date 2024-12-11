@@ -32,18 +32,21 @@ body::-webkit-scrollbar-track {
   text-align: center;
 }
 
-.ht_bg .container {
-  border-top: 5px solid white;
-  width: 25%;
-}
-
 .ht_bg .ht_bgt1 {
   padding-top: 40vh;
   font-size: 30px;
 }
+.ht_bg div {
+  max-width: 80vw;
+}
 
-.ht_bg .ht_bgt2 {
+.banner-title {
   font-size: 60px;
+}
+
+.underline {
+  border-top: 5px solid white;
+  width: 100%;
 }
 
 .task1 img {
@@ -110,9 +113,12 @@ body::-webkit-scrollbar-track {
   width: auto;
 }
 
+.footer .container .row .col-md-3 a {
+  margin: 20px;
+}
+
 .footer .container .row .col-md-3 i {
   scale: 200%;
-  margin: 20px;
 }
 
 .footer .container .row>div {
@@ -394,16 +400,6 @@ body::-webkit-scrollbar-track {
   text-align: center;
 }
 
-.hp_bg .hp_bgt2 {
-  padding-top: 50vh;
-  font-size: 60px;
-}
-
-.hp_bg .container {
-  border-top: 5px solid white;
-  width: 25%;
-}
-
 .hp_anhphong {
   width: 100%;
   height: auto;
@@ -518,14 +514,6 @@ p, strong, input, textarea, div {
     color: white;
     text-align: center;
   }
-  .contact-banner .container {
-    border-top: 5px solid white;
-    width: 25%;
-  }
-  .contact-banner .ht_bgt2 {
-    padding-top: 50vh;
-    font-size: 60px;
-  }
   .hotel-info, .contact-form {
     border: 2px solid #C8B276;
     padding: 20px;
@@ -538,15 +526,10 @@ p, strong, input, textarea, div {
     background: url(../img/service-banner.jpg) no-repeat center center/cover;
     height: 70vh;
     color: white;
-    text-align: center;
   }
   .service-banner .container {
     border-top: 5px solid white;
-    width: 25%;
-  }
-  .service-banner .ht_bgt2 {
-    padding-top: 50vh;
-    font-size: 60px;
+    width: 100%;
   }
   .pay-banner {
     background: url(../img/service-banner.jpg) no-repeat center center/cover;
@@ -557,10 +540,6 @@ p, strong, input, textarea, div {
   .pay-banner .container {
     border-top: 5px solid white;
     width: 25%;
-  }
-  .pay-banner .ht_bgt2 {
-    padding-top: 50vh;
-    font-size: 60px;
   }
 .form-check {
   display: block;
@@ -692,7 +671,7 @@ form img {
 
 .details {
   background-color: #fff;
-  height: 75vh;
+  height: 65vh;
   max-height: 50vw;
   overflow-y: scroll;
 }
@@ -720,4 +699,12 @@ form img {
 
 .scrollToTopBtn:hover {
   background-color: #A68A50;
+}
+
+#indexx
+{
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: justify;
 }
