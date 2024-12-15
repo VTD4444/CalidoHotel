@@ -90,11 +90,14 @@
             </div>
         </div><br><br>
         <div class="d-flex justify-content-center">
-            <a href="#" class="button">Thanh toán và nhận mã QR</a>
+            <a href="#" class="button" onclick="showPanel()">Thanh toán và nhận mã QR</a>
         </div><br>
         <div class="d-flex justify-content-center">
             <small>Bằng cách tiếp tục thanh toán, bạn đã đồng ý <span class="note">Điều khoản & Điều kiện</span> và <span class="note">Chính sách quyền riêng tư</span> </small>
         </div>
+    </div>
+    <div id="overlay" class="overlay d-none">
+        <img class="qr-code" src="./assets/img/QR-Code.jpg">
     </div>
     <div class="footer">
         <div class="container p-4 p-md-5">

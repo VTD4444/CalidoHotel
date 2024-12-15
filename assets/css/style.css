@@ -583,7 +583,6 @@ form img {
   max-height: 70vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  
 }
 
 #detail-panel .row {
@@ -707,4 +706,17 @@ form img {
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: justify;
+}
+.deals-title {
+  width: 250px;
+}
+.deals {
+  transition: all 0.3s ease;
+}
+.deals:hover {
+  transform: scale(1.03);
+}
+.qr-code {
+  width: 80vw;
+  max-width: 80vh;
 }
