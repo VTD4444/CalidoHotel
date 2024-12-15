@@ -29,6 +29,15 @@
 <script>
     $(function () {
         $("#navbar").load("./navbar.html");
+        const cookies = document.cookie.split(';');
+        let totalPrice = '0 VND';
+        cookies.forEach(cookie => {
+            const [name, value] = cookie.trim().split('=');
+            if (name === 'totalPrice') {
+                totalPrice = decodeURIComponent(value);
+            }
+        });
+        $('#payable').text(totalPrice);
     });
 </script>
 
@@ -76,7 +85,7 @@
                 </form>
                 <div class="d-flex justify-content-between mt-3">
                     <h2>Tổng giá</h2>
-                    <h2>793.650 VND</h2>
+                    <h2 id="payable">0 VND</h2>
                 </div>
             </div>
         </div><br><br>

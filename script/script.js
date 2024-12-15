@@ -1,6 +1,6 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//   TurnOnMenuPanel();
-// });
+document.addEventListener('DOMContentLoaded', function() {
+  TurnOnMenuPanel();
+});
 function TurnOnMenuPanel() {
   const mobileMenu = document.querySelector('.mobile-menu');
   const overlay = document.querySelector('.mobile-menu-overlay');
